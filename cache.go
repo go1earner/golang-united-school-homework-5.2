@@ -14,7 +14,7 @@ type Cache struct {
 }
 
 func NewCache() Cache {
-	return Cache{}
+	return Cache{map[string]map[string]string{}}
 }
 
 func (cache *Cache) Get(key string) (string, bool) {
