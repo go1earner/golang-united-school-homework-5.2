@@ -13,10 +13,8 @@ type Cache struct {
 	storage map[string]map[string]string
 }
 
-func NewCache(storage map[string]map[string]string) Cache {
-	return Cache{
-		storage: storage,
-	}
+func NewCache() Cache {
+	return Cache{}
 }
 
 func (cache *Cache) Get(key string) (string, bool) {
